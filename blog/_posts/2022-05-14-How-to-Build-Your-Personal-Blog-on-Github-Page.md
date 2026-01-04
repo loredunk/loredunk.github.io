@@ -3,7 +3,11 @@ layout: post
 title: How to Build Your Personal Blog on Github Page
 truncated_preview: true
 excerpt_separator: <!--more--> 
----
+tags:
+  - GitHub Pages
+  - Jekyll
+  - 博客
+--- 
 
 <div class="message">
 教你如何使用github page搭建网页<br>
@@ -11,4 +15,3 @@ excerpt_separator: <!--more-->
 </div>    
 
 <!--more-->
-

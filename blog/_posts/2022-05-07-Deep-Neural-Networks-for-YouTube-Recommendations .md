@@ -3,6 +3,11 @@ layout: post
 title: Deep Neural Networks for YouTube Recommendations
 truncated_preview: true
 excerpt_separator: <!--more-->
+tags:
+  - YouTube
+  - 推荐系统
+  - 深度学习
+  - 论文笔记
 ---
 
 

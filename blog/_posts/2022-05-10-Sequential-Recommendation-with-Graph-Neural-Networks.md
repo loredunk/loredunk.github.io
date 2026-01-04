@@ -3,6 +3,12 @@ layout: post
 title: Sequential Recommendation with Graph Neural Networks
 truncated_preview: true
 excerpt_separator: <!--more--> 
+
+tags:
+  - 推荐系统
+  - 序列推荐
+  - 图神经网络
+  - 论文笔记
 ---
 
 <div class="message">

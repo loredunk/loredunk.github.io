@@ -47,4 +47,38 @@ title: Home
   <p>暂无文章</p>
 {% endif %}
 
+<h2>最近文章</h2>
+{% assign recent_posts = site.posts | slice: 0, 5 %}
+<ul class="recent-posts">
+  {% if recent_posts.size > 0 %}
+    {% for post in recent_posts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <span class="post-meta">{{ post.date | date: "%d %b %Y" }}</span>
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>暂无文章</li>
+  {% endif %}
+</ul>
 
+<div class="text-center">
+  <a href="{{ site.baseurl }}/blog/" class="read-more">查看全部</a>
+</div>
+
+<h2>浏览标签</h2>
+<div class="tag-category-cloud">
+  <div class="tag-list">
+    <ul class="tag-pills">
+      {% if site.tags and site.tags != empty %}
+        {% for tag in site.tags %}
+          <li>
+            <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify: 'raw' }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+          </li>
+        {% endfor %}
+      {% else %}
+        <li>暂无标签</li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

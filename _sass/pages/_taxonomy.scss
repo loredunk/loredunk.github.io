@@ -1,0 +1,77 @@
+/**
+ * _taxonomy.scss
+ * Styles for category and tag listings
+ */
+
+.recent-posts,
+.tag-pills,
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recent-posts li,
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed lighten($post-date-color, 35%);
+}
+
+.post-tags {
+  @extend .tag-pills;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.post-tags li {
+  display: inline-block;
+}
+
+.post-tags a {
+  @extend .tag-pills a;
+}
+
+.recent-posts a,
+.post-list a {
+  color: $body-text-color;
+  text-decoration: none;
+}
+
+.recent-posts .post-meta,
+.post-list .post-meta {
+  color: $post-date-color;
+  font-size: 0.85rem;
+}
+
+.tag-category-cloud {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.tag-pills li {
+  display: inline-block;
+}
+
+.tag-pills a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  margin: 0 0.35rem 0.35rem 0;
+  border: 1px solid lighten($post-date-color, 25%);
+  border-radius: 999px;
+  color: $body-text-color;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.tag-pills a:hover {
+  background: $link-color;
+  color: #fff;
+  border-color: $link-color;
+}
+
+.tag-section {
+  margin-bottom: 2rem;
+}
