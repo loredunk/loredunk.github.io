@@ -1,0 +1,40 @@
+---
+layout: default
+title: 标签
+permalink: /tags/
+---
+
+<div class="page">
+  <header>
+    <h1>按标签浏览</h1>
+    <p>点击标签快速跳转到对应的文章列表。</p>
+  </header>
+
+  {% if site.tags and site.tags != empty %}
+    <div class="tag-cloud">
+      <ul class="tag-pills">
+        {% for tag in site.tags %}
+          <li>
+            <a href="#{{ tag[0] | slugify: 'raw' }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    {% for tag in site.tags %}
+      <section id="{{ tag[0] | slugify: 'raw' }}" class="tag-section">
+        <h2>{{ tag[0] }}</h2>
+        <ul class="post-list">
+          {% for post in tag[1] %}
+            <li>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+  {% else %}
+    <p>暂无标签内容。</p>
+  {% endif %}
+</div>

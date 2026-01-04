@@ -3,6 +3,13 @@ layout: post
 title: Contrastive Learning for Sequential Recommendation
 truncated_preview: true
 excerpt_separator: <!--more--> 
+categories:
+  - 推荐系统
+tags:
+  - 对比学习
+  - 序列推荐
+  - 推荐系统
+  - 论文笔记
 ---
 
 <div class="message">
@@ -18,4 +25,3 @@ excerpt_separator: <!--more-->
 对每个用户的序列使用两种随机的增强方法，最后获得2N个被增强的序列，取一个用户的两个增强视角作为正样本对，其他2（N-1）个负样本对。
 
 ###  数据增强操作
-

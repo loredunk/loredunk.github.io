@@ -3,6 +3,14 @@ layout: post
 title: STAM - Spiking Graph Convolutional Networks
 truncated_preview: true
 excerpt_separator: <!--more--> 
+categories:
+  - 推荐系统
+  - 脉冲神经网络
+tags:
+  - 脉冲神经网络
+  - 图神经网络
+  - 推荐系统
+  - 论文笔记
 ---
 
 <div class="message">
