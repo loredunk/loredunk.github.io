@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "bundle install && bundle exec jekyll build",
+  "outputDirectory": "_site",
+  "framework": "other",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD"
+}
