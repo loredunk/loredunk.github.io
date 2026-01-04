@@ -19,19 +19,6 @@
   border-bottom: 1px dashed lighten($post-date-color, 35%);
 }
 
-.post-tags {
-  @extend .tag-pills;
-  margin: 0.5rem 0 1rem 0;
-}
-
-.post-tags li {
-  display: inline-block;
-}
-
-.post-tags a {
-  @extend .tag-pills a;
-}
-
 .recent-posts a,
 .post-list a {
   color: $body-text-color;
@@ -74,4 +61,31 @@
 
 .tag-section {
   margin-bottom: 2rem;
+}
+
+.post-tags {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.post-tags li {
+  display: inline-block;
+}
+
+.post-tags a {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  margin: 0 0.35rem 0.35rem 0;
+  border: 1px solid lighten($post-date-color, 25%);
+  border-radius: 999px;
+  color: $body-text-color;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.post-tags a:hover {
+  background: $link-color;
+  color: #fff;
+  border-color: $link-color;
 }
