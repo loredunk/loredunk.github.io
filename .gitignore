@@ -17,5 +17,6 @@ vendor/
 
 # custom
 *.bat
+CLAUDE.md
 
 #
